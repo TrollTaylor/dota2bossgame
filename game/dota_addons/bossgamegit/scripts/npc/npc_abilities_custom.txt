@@ -2,8 +2,136 @@
 "DOTAAbilities"
 {
 	"Version"		"1"
+	"summoner_earth"
+	{
 
 
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"summoner_earth_modi"
+				"Target" 		"CASTER"
+			
+			}	
+		}
+
+		"Modifiers"
+		{
+
+			"summoner_earth_modi"
+			{
+
+
+
+
+			}
+
+		}
+
+
+	}
+
+	"summoner_fire"
+	{
+
+
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"summoner_fire_modi"
+				"Target" 		"CASTER"
+			
+			}	
+		}
+
+		"Modifiers"
+		{
+
+			"summoner_fire_modi"
+			{
+
+
+
+
+			}
+
+		}
+
+
+	}
+	"summoner_water"
+	{
+
+
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"summoner_water_modi"
+				"Target" 		"CASTER"
+			
+			}	
+		}
+
+		"Modifiers"
+		{
+
+			"summoner_water_modi"
+			{
+
+
+
+
+			}
+
+		}
+
+
+	}
+
+	"summoner_air"
+	{
+
+
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"summoner_air_modi"
+				"Target" 		"CASTER"
+			
+			}	
+		}
+
+		"Modifiers"
+		{
+
+			"summoner_air_modi"
+			{
+
+
+
+
+			}
+
+		}
+
+
+	}
 
 	"engineer_repair"
 	{
