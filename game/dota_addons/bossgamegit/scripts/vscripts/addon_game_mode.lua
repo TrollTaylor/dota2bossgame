@@ -132,7 +132,7 @@ end
 
 
 function BossGame:InitGameMode()
-	print("The poop has dropped!!!")
+	print("fuk the police coming straight from the underground a young andy got it back cause hes brown and all the other colors so police think they have the authori")
 	GameRules:GetGameModeEntity():SetThink( "OnThink", self, "GlobalThink", 2 )
 	GameRules:GetGameModeEntity():SetAnnouncerDisabled(true)
 	GameRules:GetGameModeEntity():SetLoseGoldOnDeath(false)
