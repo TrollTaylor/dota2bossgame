@@ -132,7 +132,7 @@ end
 
 
 function BossGame:InitGameMode()
-	print("The poop has dropped!")
+	print("The poop has dropped!!!")
 	GameRules:GetGameModeEntity():SetThink( "OnThink", self, "GlobalThink", 2 )
 	GameRules:GetGameModeEntity():SetAnnouncerDisabled(true)
 	GameRules:GetGameModeEntity():SetLoseGoldOnDeath(false)
