@@ -1,0 +1,419 @@
+@define ANIM_TIME: 0.75s;
+@define EXTRA_PADDING: 50px;
+@define M_EXTRA_PADDING: -50px;
+
+
+
+
+#selectbutt
+{
+
+		margin-left: 550px;
+	margin-top: 650px;
+}
+
+#button_back
+{
+    background-color: gradient( linear, 100% 0%, 100% 100%, from( #404040    ), color-stop( 0.01, #404040    ), color-stop( 0.2, #393939    ), to( #404040   ) );
+  padding-left: 120px;
+	padding-right: 450px;
+	padding-top: 50px;
+
+
+}
+#button_back:hover
+{
+
+    background-color: gradient( linear, 100% 0%, 100% 100%, from( #404040 ), color-stop( 0.01, #404040   ), color-stop( 0.01, #393939   ), to( #c5c5c5  ) );
+
+
+}
+
+
+
+
+#back
+{
+
+	margin-left: 100px;
+	margin-right: 0px;
+	margin-top: 100px;
+    vertical-align: top;
+  padding-left: 720px;
+	padding-right: 800px;
+	padding-top: 800px;
+
+    background-color: gradient( linear, 100% 0%, 100% 100%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
+    box-shadow: black -4px -4px 8px 8px;
+
+}
+
+
+#cross
+{
+
+    vertical-align: top;
+
+	margin-top: -550px;
+	margin-left: -575px;
+
+}
+
+#npc_dota_hero_pugna
+{
+
+
+	width: 150px;
+	height: 100px;
+	margin-right: 0px;
+	margin-top: 475px;
+    vertical-align: top;
+
+
+}
+
+#npc_dota_hero_death_prophet
+{
+
+
+	width: 150px;
+	height: 100px;
+
+	margin-right: 0px;
+	margin-top: 475px;
+    vertical-align: top;
+
+
+}
+
+@keyframes 'a' {
+
+from{ width: 250px;}
+to{width: 1000px;}
+
+}
+
+
+
+
+#npc_dota_hero_drow_ranger
+{
+
+
+	width: 150px;
+	height: 100px;
+	margin-right: 0px;
+	margin-top: 475px;
+	vertical-align: top;
+
+
+}
+
+
+
+#npc_dota_hero_rattletrap
+{
+
+
+	width: 150px;
+	height: 100px;
+	margin-right: 0px;
+	margin-top: 475px;
+	vertical-align: top;
+
+
+}
+
+#player1
+{
+
+margin-left: 100px;
+}
+
+
+
+#player2
+{
+
+	margin-left: 350px;
+
+}
+
+
+
+#player3
+{
+	margin-left: 600px;
+	
+}
+
+
+#player4
+{
+	margin-left: 850px;
+	
+}
+
+
+#player5
+{
+	margin-left: 1100px;
+	
+}
+
+.playerpanel
+{
+
+		/*wash-color: #ffffff;*/
+
+
+
+}
+.playerpic
+{
+	    clip: rect(45px,1000px,75px,10px);
+	    width: 150px;
+margin-top: 550px;
+
+}
+
+
+#playerpics
+{
+
+
+	width: 5000px;
+	padding-bottom: 100px;
+	margin-left: 100px;
+	margin-right: 0px;
+	margin-top: 245px;
+
+
+}
+
+#avatext
+{
+
+	    color: #3366CC;
+
+		font-family: Radiance;
+
+  		 font-size: 30;
+
+		font-weight: bold;
+
+    vertical-align: center;
+
+	margin-top: 50px;
+
+	margin-left: 30px;
+
+
+
+}
+
+
+#npc_dota_hero_alchemist
+{
+
+
+	width: 150px;
+	height: 100px;
+	margin-right: 0px;
+	margin-top: 475px;
+	vertical-align: top;
+
+}
+
+
+
+
+#tank_pica
+{
+
+
+	width: 250px;
+	height: 200px;
+    box-shadow: black -4px -4px 8px 8px;
+
+}
+
+#ranger_pica
+{
+
+
+	width: 250px;
+	height: 200px;
+    box-shadow: black -4px -4px 8px 8px;
+
+}
+
+#engineer_pica
+{
+
+
+	width: 250px;
+	height: 200px;
+    box-shadow: black -4px -4px 8px 8px;
+
+}
+
+
+#aaa
+{
+
+background-color: blue;
+
+}
+
+#debug_te
+{
+margin-right: 50px;
+
+
+}
+
+#avapic
+{
+
+	height: 100px;
+    box-shadow: black -4px -4px 8px 8px;
+margin-bottom: 50px; 
+margin-left: 100px; 
+
+}
+
+
+#medic_pica
+{
+
+
+	width: 250px;
+	height: 200px;
+	
+    box-shadow: black -4px -4px 8px 8px;
+
+}
+
+#debug_pan
+{
+    background-color: gradient( linear, 100% 0%, 100% 100%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
+
+
+margin-left: 1500px;
+	margin-top: 30px;
+    vertical-align: top;
+
+ 
+	flow-children: right;
+
+
+
+}
+
+ /*#medic_pica
+{
+	width: 200px;
+	height: 250px;
+
+
+    box-shadow: black -4px -4px 8px 8px;
+
+
+
+}
+#medic_pic
+{
+
+			margin-top: -500px;
+	width: 200px;
+	height: 250px;
+
+
+    box-shadow: black -4px -4px 8px 8px;
+
+
+
+}
+
+#tank_pic
+{
+	margin-top: -500px;
+	margin-left: 50px;
+	width: 250px;
+	height: 250px;
+
+    box-shadow: black -4px -4px 8px 8px;
+
+  
+}
+
+
+
+
+
+#medic_text
+{
+
+	    color: #00ff00;
+
+		font-family: Radiance;
+
+  		 font-size: 30;
+
+		font-weight: bold;
+
+    vertical-align: center;
+
+	margin-top: -100px;
+
+
+}
+
+#tank_pica
+{		
+	width: 200px;
+	height: 250px;
+
+
+    box-shadow: black -4px -4px 8px 8px;
+
+
+
+}
+#luna_pic
+{
+			margin-top: -500px;
+	width: 200px;
+	height: 250px;
+
+
+    box-shadow: black -4px -4px 8px 8px;
+
+
+
+}
+
+
+
+#luna_text
+{
+	    color: #00ff00;
+
+
+   
+
+
+}
+#luna_pica
+{
+	width: 200px;
+	height: 250px;
+
+
+    box-shadow: black -4px -4px 8px 8px;
+
+
+
+}
+

@@ -1,0 +1,50 @@
+"CustomHeroList"
+{
+
+	//THIEF BOSS THING
+	//BUTTHOLE
+
+	"npc_dota_hero_enchantress" "1" //SUMMONER
+
+	"npc_dota_hero_batrider"	"1" //PYROMANIAC
+
+	"npc_dota_hero_rattletrap" "1"	//ENGINEER
+	
+	"npc_dota_hero_alchemist" "1"	//TANK
+
+	"npc_dota_hero_troll_warlord"	"1"
+
+	"npc_dota_hero_pugna" "1"		//GUARIDAN
+
+	"npc_dota_hero_winter_wyvern" 	"1" //ICE DRAGON (NEEDS NEW NAME)
+
+
+	"npc_dota_hero_drow_ranger" "1"		//RANGER
+
+	"npc_dota_hero_wisp"		"1"		//SELECT
+
+	"npc_dota_hero_meepo"		"1"		//WIP
+
+	"npc_dota_hero_luna"	"1"		//WIP
+	
+	"npc_dota_hero"
+
+	//BOSSES
+
+	"npc_dota_hero_undying" "1"			//UNDYING ZEUS
+
+	"npc_dota_hero_pudge"	"1"			//UNNAMED PUDGE BOSS
+
+	"npc_dota_hero_crystal_maiden"		"1"     //CM AND URSA BOSS COOP 1
+
+	"npc_dota_hero_ursa"				"1"		//CM AND URSA BOSS COOP 2
+
+	"npc_dota_hero_techies"				"1"		//TECHIES BOSS COOP 1
+
+	"npc_dota_hero_zuus"				"1"		//TECHIES BOSS COOP 2
+		
+
+	//PUGNA,JUGGERNAUT,CLOCKWERK,ALCHEMIST,IO
+
+
+}

@@ -1,0 +1,9 @@
+"AddonInfo"
+{
+	"maps"				"boss_game"
+
+	"boss_game"
+	{
+		"MaxPlayers"	"6"
+	}
+}

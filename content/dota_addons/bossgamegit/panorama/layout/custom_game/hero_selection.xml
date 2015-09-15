@@ -1,0 +1,142 @@
+<root>
+	 	<styles>
+		<include src="file://{resources}/styles/custom_game/custom_ui_top_bar.css" />
+	</styles>
+		<scripts>
+		<include src="file://{resources}/scripts/custom_game/hero_selection.js" />
+	</scripts>
+
+
+	<Panel>
+
+	
+		<Panel hittest="true" id="debug_pan" selectionpos="auto">
+		<Button id="debug_but" onactivate="showHud()">
+			<Label id="debug_te" text="DEBUG" />
+
+
+		</Button>
+	
+
+
+		
+		</Panel>
+
+		<Panel hittest="true" id="back" selectionpos="auto">
+
+
+
+			</Panel>
+
+			<Panel hittest="false" id="playerpics" selectionpos="auto">
+
+			<Panel hittest="false" id="playerpic1" selectionpos="auto" class="playerpanel">
+			<DOTAAvatarImage steamid="0" id="player1" class="playerpic"/>
+			</Panel>
+			<Panel hittest="false" id="playerpic2" selectionpos="auto" class="playerpanel">
+			<DOTAAvatarImage steamid="0" id="player2" class="playerpic"/>
+			</Panel>
+			<Panel hittest="false" id="playerpic3" selectionpos="auto" class="playerpanel">
+			<DOTAAvatarImage steamid="0" id="player3" class="playerpic"/>
+			</Panel>
+			<Panel hittest="false" id="playerpic4" selectionpos="auto" class="playerpanel">
+			<DOTAAvatarImage steamid="0" id="player4" class="playerpic"/>
+			</Panel>
+			<Panel hittest="false" id="playerpic5" selectionpos="auto" class="playerpanel">
+			<DOTAAvatarImage steamid="0" id="player5" class="playerpic"/>
+			</Panel>
+
+
+
+			</Panel>
+
+		<Panel hittest="true" id="npc_dota_hero_pugna" selectionpos="auto">
+		<Button id="medic_pic" onactivate="selectHero('npc_dota_hero_pugna')">
+			<DOTAHeroImage id="medic_pica" heroname="npc_dota_hero_pugna" heroimagestyle="landscape" />
+			<Label id="medic_text" text="Guardian" />
+
+			</Button>
+
+			</Panel>
+
+				<Panel hittest="true" id="npc_dota_hero_winter_wyvern" selectionpos="auto">
+		<Button id="icedrag_pic" onactivate="selectHero('npc_dota_hero_winter_wyvern')">
+			<DOTAHeroImage id="icedrag_pica" heroname="npc_dota_hero_winter_wyvern" heroimagestyle="landscape" />
+			<Label id="icedrag_text" text="icedrag" />
+
+			</Button>
+
+			</Panel>
+
+					<Panel hittest="true" id="npc_dota_hero_troll_warlord" selectionpos="auto">
+		<Button id="berserker_pic" onactivate="selectHero('npc_dota_hero_troll_warlord')">
+			<DOTAHeroImage id="berserker_pica" heroname="npc_dota_hero_troll_warlord" heroimagestyle="landscape" />
+			<Label id="berserker_text" text="berserker" />
+
+			</Button>
+
+			</Panel>
+
+				<Panel hittest="true" id="npc_dota_hero_enchantress" selectionpos="auto">
+			<Button id="summoner_pic" onactivate="selectHero('npc_dota_hero_enchantress')">
+			<DOTAHeroImage id="summoner_pica" heroname="npc_dota_hero_enchantress" heroimagestyle="landscape" />
+			<Label id="summoner_text" text="Summoner" />
+
+			</Button>
+
+			</Panel>
+
+		<Panel hittest="true" id="npc_dota_hero_rattletrap" selectionpos="auto">
+		<Button id="engineer_pic" onactivate="selectHero('npc_dota_hero_rattletrap')">
+			<DOTAHeroImage id="engineer_pica" heroname="npc_dota_hero_rattletrap" heroimagestyle="landscape" />
+			<Label id="engineer_text" text="Guardian" />
+
+			</Button>
+
+			</Panel>
+			
+			<Panel hittest="true" id="npc_dota_hero_alchemist" selectionpos="auto">
+
+			<Button id="tank_pic" onactivate="selectHero('npc_dota_hero_alchemist')">
+							<DOTAHeroImage id="tank_pica" heroname="npc_dota_hero_alchemist" heroimagestyle="landscape" />
+
+				<Label id="tank_text" text="Tank" />
+
+
+			
+				</Button>
+		
+
+
+			</Panel>
+				<Panel hittest="true" id="npc_dota_hero_drow_ranger" selectionpos="auto">
+		<Button id="ranger_pic" onactivate="selectHero('npc_dota_hero_drow_ranger')">
+			<DOTAHeroImage id="ranger_pica" heroname="npc_dota_hero_drow_ranger" heroimagestyle="landscape" />
+			<Label id="ranger_text" text="Ranger" />
+
+			</Button>
+
+			</Panel>
+
+	<Panel hittest="true" id="npc_dota_hero_batrider" selectionpos="auto">
+		<Button id="pyro_pic" onactivate="selectHero('npc_dota_hero_batrider')">
+			<DOTAHeroImage id="pyro_pica" heroname="npc_dota_hero_batrider" heroimagestyle="landscape" />
+			<Label id="pyro_text" text="PYROMANIAC" />
+
+			</Button>
+
+			</Panel>
+		
+		<Panel hittest="true" id="selectbutt" selectionpos="auto">
+
+			<Panel hittest="true" id="button_back">
+				
+			</Panel>
+
+		</Panel>
+
+
+
+
+	</Panel>
+</root>

@@ -1,0 +1,249 @@
+// Dota Heroes File
+// NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
+// the specified key-value combinations.  Use override_hero <hero_to_override> for this.
+"DOTAHeroes"
+{
+	
+	"npc_dota_hero_guardian"
+	{
+		"override_hero"				"npc_dota_hero_pugna"	
+				"VoiceFile"					""
+
+		"SoundSet"					"0"	
+
+		"AbilityLayout"				"4"		
+		"Ability1"                                      "guardian_heal"
+		"Ability2"										"guardian_spell_immune"
+		"Ability3"										"guardian_armor_aura"
+		"Ability4"										"guardian_mana"
+		"VisionNighttimeRange"		"1800"			
+		"ParticleFile"				"0"
+
+	
+		"AttributeBaseStrength"		"16"										// Base strength
+		"AttributeStrengthGain"		"2.0"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"16"										// Base intelligence
+		"AttributeIntelligenceGain"	"2.5"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"21"										// Base agility
+		"AttributeAgilityGain"		"1.2"								
+
+		"AttackDamageMin"			"38"									// Damage range min.
+		"AttackDamageMax"			"44"	
+
+
+		"ArmorPhysical"				"2"			
+	}
+
+
+	"npc_dota_hero_cm_boss"
+	{
+		"override_hero"	"npc_dota_hero_crystal_maiden"
+				"VoiceFile"					""
+
+		"AbilityLayout"				"4"		
+		"Ability1"                                      "engineer_trap_spawn"
+		"Ability2"										"engineer_trap_ab"
+		"Ability3"										"guardian_armor_aura"
+		"Ability4"										"guardian_mana"
+		"VisionNighttimeRange"		"1800"		
+
+		"AttributeBaseStrength"		"16"										// Base strength
+		"AttributeStrengthGain"		"2.0"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"16"										// Base intelligence
+		"AttributeIntelligenceGain"	"2.5"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"21"										// Base agility
+		"AttributeAgilityGain"		"1.2"								
+
+		"AttackDamageMin"			"38"									// Damage range min.
+		"AttackDamageMax"			"44"	
+
+
+		"ArmorPhysical"				"2"		
+		
+
+	}
+
+	"npc_dota_hero_ursa_boss"
+	{
+		"override_hero"	"npc_dota_hero_ursa"
+				"VoiceFile"					""
+
+		"AbilityLayout"				"4"		
+		"Ability1"                                      "engineer_trap_spawn"
+		"Ability2"										"engineer_trap_ab"
+		"Ability3"										"guardian_armor_aura"
+		"Ability4"										"guardian_mana"
+		"VisionNighttimeRange"		"1800"		
+
+		"AttributeBaseStrength"		"16"										// Base strength
+		"AttributeStrengthGain"		"2.0"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"16"										// Base intelligence
+		"AttributeIntelligenceGain"	"2.5"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"21"										// Base agility
+		"AttributeAgilityGain"		"1.2"								
+
+		"AttackDamageMin"			"38"									// Damage range min.
+		"AttackDamageMax"			"44"	
+
+
+		"ArmorPhysical"				"2"		
+		
+
+	}
+
+	"npc_dota_hero_engineer"
+	{
+		"override_hero"				"npc_dota_hero_rattletrap"	
+				"VoiceFile"					""
+
+		"SoundSet"					"0"	
+
+		"AbilityLayout"				"5"		
+		"Ability1"                                      "engineer_trap_build"
+		"Ability2"										"engineer_turret_build"
+		"Ability3"										"engineer_repair"
+		"Ability4"										"engineer_hard_worker"
+		"Ability5"										"engineer_build_shield_bubble"
+		"VisionNighttimeRange"		"1800"			
+		"ParticleFile"				"0"
+
+	
+		"AttributeBaseStrength"		"16"										// Base strength
+		"AttributeStrengthGain"		"2.0"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"16"										// Base intelligence
+		"AttributeIntelligenceGain"	"2.5"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"21"										// Base agility
+		"AttributeAgilityGain"		"1.2"								
+
+		"AttackDamageMin"			"38"									// Damage range min.
+		"AttackDamageMax"			"44"	
+
+
+		"ArmorPhysical"				"2"			
+	}
+
+
+	"npc_dota_hero_luna"
+	{
+		"override_hero"				"npc_dota_hero_luna"	
+				"VoiceFile"					""
+
+		"Model"						"models/roshan/luna_reference.vmdl"	
+
+		"SoundSet"					"0"	
+
+		"AbilityLayout"				"4"		
+		"Ability1"                                      "guardian_heal"
+		"Ability2"										"guardian_spell_immune"
+		"Ability3"										"guardian_armor_aura"
+		"Ability4"										"guardian_mana"
+		"VisionNighttimeRange"		"1800"			
+		"ParticleFile"				"0"
+
+	
+		"AttributeBaseStrength"		"16"										// Base strength
+		"AttributeStrengthGain"		"2.0"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"16"										// Base intelligence
+		"AttributeIntelligenceGain"	"2.5"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"21"										// Base agility
+		"AttributeAgilityGain"		"1.2"								
+
+		"AttackDamageMin"			"38"									// Damage range min.
+		"AttackDamageMax"			"44"	
+
+
+		"ArmorPhysical"				"2"			
+	}
+	
+		
+	"npc_dota_hero_select"
+	{
+		"override_hero"				"npc_dota_hero_wisp"	
+				"VoiceFile"					""
+
+
+		"AbilityLayout"				"1"		
+		"SoundSet"					"0"
+		"Ability1"                                      "select_cant_move"
+		"Model"						"0"
+
+		"VisionNighttimeRange"		"0"			
+
+	
+		"AttributeBaseStrength"		"0"										// Base strength
+		"AttributeStrengthGain"		"0.0"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"0"										// Base intelligence
+		"AttributeIntelligenceGain"	"0.0"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"0"										// Base agility
+		"AttributeAgilityGain"		"0.0"								
+
+		"AttackDamageMin"			"0"									// Damage range min.
+		"AttackDamageMax"			"0"	
+
+
+		"ArmorPhysical"				"0"			
+	}
+
+
+
+	"npc_dota_hero_ranger"
+	{
+		"override_hero"				"npc_dota_hero_drow_ranger"	
+		"VoiceFile"					""
+		"AbilityLayout"				"4"		
+		"Ability1"                                      "ranger_lucky_shooter"
+		"Ability2"										"ranger_run"
+		"Ability3"										"ranger_posion"
+		"Ability4"										"ranger_attack"
+		"VisionNighttimeRange"		"1800"			
+
+	
+		"AttributeBaseStrength"		"16"										// Base strength
+		"AttributeStrengthGain"		"2.0"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"16"										// Base intelligence
+		"AttributeIntelligenceGain"	"2.5"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"21"										// Base agility
+		"AttributeAgilityGain"		"1.2"								
+
+		"AttackDamageMin"			"38"									// Damage range min.
+		"AttackDamageMax"			"44"	
+
+
+		"ArmorPhysical"				"2"		
+			
+	}
+
+
+	
+
+
+	"npc_dota_hero_boss1"
+	{
+		"override_hero"				"npc_dota_hero_undying"	 
+				"VoiceFile"					""
+
+		"Model"						"models/heroes/zuus/zuus.mdl"	
+		"ModelScale" 				"1.50"
+		"AbilityLayout"				"4"		
+		"Ability1"                  ""
+		"Ability2"					""
+		"Ability3"					""
+		"Ability4"					""
+		"VisionNighttimeRange"		"1800"			
+
+	
+		"AttributeBaseStrength"		"16"										// Base strength
+		"AttributeStrengthGain"		"2.0"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"16"										// Base intelligence
+		"AttributeIntelligenceGain"	"2.5"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"21"										// Base agility
+		"AttributeAgilityGain"		"1.2"								
+
+	
+
+			
+	}
+
+	
+
+}

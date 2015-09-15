@@ -1,0 +1,739 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+
+
+	"engineer_repair"
+	{
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+
+	}
+
+	"engineer_hard_worker"
+	{
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+
+
+
+	}
+
+
+
+	"engineer_trap_ability"
+	{
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+
+	"OnSpellStart"
+		{
+		
+
+		}
+
+
+	}
+
+	"engineer_build_shield_bubble"
+	{
+
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+	}
+
+
+	"engineer_turret_build"
+	{
+
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilitySharedCooldown" "engineer_trap_build"
+		"AbilityCooldown"				"60.0"
+		"AbilityManaCost"				"100"
+
+	"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"engineer_abilities.lua"
+				"Function"		"spawnTurret"
+			}
+
+		}
+
+	}
+
+	"engineer_trap_build"
+	{
+
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"				"60.0"
+		"AbilityManaCost"				"100"
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"engineer_abilities.lua"
+				"Function"		"spawnTrap"
+			}
+
+		}
+
+
+
+
+	}
+
+
+	"engineer_trap_ab"
+	{
+
+
+		"BaseClass"             		"ability_datadriven"
+		
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+		
+		"OnUpgrade"
+		{
+
+			"RunScript"
+			{
+				"ScriptFile"	"engineer_abilities.lua"
+				"Function"		"trapSpawn"
+			}
+			"ApplyModifier"
+			{
+
+				"Target"		"CASTER"	
+				"ModifierName"	"trap_thinker"
+				
+
+
+			}
+
+		}
+"OnProjectileHitUnit"
+{
+
+	"RunScript"
+			{
+				"ScriptFile"	"engineer_abilities.lua"
+				"Function"		"projectileHit"
+			}
+
+
+}
+		
+
+		"Modifiers"
+		{
+
+			"trap_bind"
+			{
+
+				"OnCreated"
+				{
+					"Damage"
+					{
+
+						"Target"		"CASTER"
+						"Type"			"DAMAGE_TYPE_PHYSICAL"
+						"Damage"		"100"
+
+					}
+				}
+			}
+
+			"trap_thinker"
+			{
+				"Hidden"	"1"
+				"States"
+				{
+					"MODIFIER_STATE_NO_UNIT_COLLISION"		"MODIFIER_STATE_VALUE_ENABLED"
+				}
+	  		"ThinkInterval" "0.1"
+
+
+   			"OnIntervalThink"
+    		{
+			"RunScript"
+			{
+				"ScriptFile"	"engineer_abilities.lua"
+				"Function"		"trapTrap"
+			}
+    			
+
+        	}
+
+
+			}
+
+
+		}
+
+	}
+
+	"select_cant_move"
+	{
+
+
+		"BaseClass"             		"ability_datadriven"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+
+		"Modifiers"
+		{
+			"idle_cant_move"
+			{
+				"Passive"   "1"
+				"States"
+				{
+            		"MODIFIER_STATE_COMMAND_RESTRICTED" "MODIFIER_STATE_VALUE_ENABLED"
+
+            		"MODIFIER_STATE_NOT_ON_MINIMAP" "MODIFIER_STATE_VALUE_ENABLED"
+
+            		"MODIFIER_STATE_NOT_ON_MINIMAP_FOR_ENEMIES" "MODIFIER_STATE_VALUE_ENABLED"
+
+				}
+
+			}
+
+
+	}
+
+	}
+
+	"ranger_attack"
+	{
+
+	"BaseClass"             		"ability_datadriven"
+ 		"AbilityTextureName"			"ranger_attack"
+
+		"AbilityType"		"DOTA_ABILITY_TYPE_ULTIMATE"  
+		"AbilityCooldown"				"25.0"
+		"AbilityManaCost"				"100"
+ 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+	"AbilitySpecial"
+		{
+		    "01"
+		    { 
+		        "var_type"  "FIELD_INTEGER"
+		        "speed" "50 80 100 120"
+		    }
+		    "2"
+		    {
+
+		    	"var_type"		"FIELD_FLOAT"
+		    	"duratio"		"5.0 8.0 10.0 15.0"
+
+		    }
+		 
+
+		  
+		    //"03" {} "04" {} and as many as needed
+		}
+
+	"OnSpellStart"
+	{
+
+
+		"ApplyModifier"
+		{
+			"Target"	"CASTER"
+			"ModifierName"	"ranger_attack_speed"
+			"Duration"	"%duratio"
+
+
+		}
+
+
+	}
+
+
+	"Modifiers"
+	{
+
+			"ranger_attack_speed"
+			{
+
+				"Properties"
+				{
+
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"   "%speed" 
+				}				
+
+
+			}
+	}
+
+	}
+
+	"ranger_posion"
+	{
+
+		"BaseClass"             		"ability_datadriven"
+ 		"AbilityTextureName"			"ranger_posion"
+   	"AbilityUnitTargetTeam"  "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "AbilityUnitTargetType"  "DOTA_UNIT_TARGET_HERO"
+	"AbilityCastPoint" "0.30"
+
+		"AbilityCooldown"				"25.0"
+		"AbilityManaCost"				"100"
+ 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+
+ 		"AbilitySpecial"
+		{
+		    "01"
+		    { 
+		        "var_type"  "FIELD_FLOAT"
+		        "dmga" "50.0 60.0 70.0 80.0"
+		    }
+		 
+
+		  
+		    //"03" {} "04" {} and as many as needed
+		}
+
+
+ 		"OnSpellStart"
+ 		{
+"LinearProjectile"
+{
+    "Target" "TARGET"
+    "EffectName"     "particles/ranger_bottle.vpcf"
+    "MoveSpeed"      "857"
+    "StartRadius"    "115"
+    "EndRadius"      "115"
+    "StartPosition"  "attach_attack1"
+    "TargetTeams"    "DOTA_UNIT_TARGET_TEAM_ENEMY"
+    "TargetTypes"    "DOTA_UNIT_TARGET_HERO"
+    "TargetFlags"    "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+    "HasFrontalCone" "0"
+    "ProvidesVision" "1"
+    "VisionRadius"   "650"
+}
+
+}
+"OnProjectileHitUnit"
+{
+
+		"ApplyModifier"
+		{
+			"Target"	"TARGET"
+			"ModifierName"	"modifier_ranger_posion"
+			"Duration"	"15"
+
+
+		}
+
+
+}
+
+
+ 		
+
+
+ 		"Modifiers"
+ 		{
+ 			"modifier_ranger_posion"
+ 			{
+ 				"Passive"			"0"
+ 				"IsHidden"			"0"
+ 				"IsDebuff"			"1"
+ 	
+ 		   "ThinkInterval" "1"
+   			"OnIntervalThink"
+    		{
+
+    			"Damage"
+    			{
+    				"Target"		"TARGET"
+    				"Type"			"DAMAGE_TYPE_MAGICAL"
+    				"Damage"		"%dmga"
+    			}
+
+        	}
+  			  
+  			  }
+ 			}
+ 		}
+
+	
+
+
+	"ranger_run"
+	{
+
+ 		"BaseClass"             		"ability_datadriven"
+ 		"AbilityTextureName"			"ranger_run"
+
+		"AbilityCooldown"				"25.0"
+
+		"AbilityManaCost"				"100"
+ 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilitySpecial"
+		{
+		    "01"
+		    { 
+		        "var_type"  "FIELD_FLOAT"
+		        "dur" "5.0 6.0 8.0 10.0"
+		    }
+		 
+
+		  
+		    //"03" {} "04" {} and as many as needed
+		}
+
+ 		"OnSpellStart"
+ 		{
+
+ 			"ApplyModifier"
+ 			{
+ 				
+ 				
+ 					"Target"  	"CASTER"
+ 					"ModifierName" "ranger_runa"
+ 					"Duration"		"%dur"
+
+ 					
+ 		
+ 			}
+
+
+
+
+ 		}
+
+
+ 		"Modifiers"
+ 		{
+
+ 			"ranger_runa"
+ 			{
+		              "EffectName" "particles/ranger_run.vpcf"
+				"EffectAttachType" "follow_origin"
+ 			"Properties" 
+		        {
+		            "MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE" "522" 
+
+		        }
+
+
+ 			}
+
+ 		}
+
+	}
+
+	"ranger_lucky_shooter"
+	{
+
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"ranger_lucky_shoooter"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	"AbilitySpecial"
+		{
+		    "01"
+		    { 
+		        "var_type"  "FIELD_INTEGER"
+		        "chance" "25 30 35 40 "
+		    }
+		    "02"
+		    {
+		    	"var_type"  "FIELD_INTEGER"
+		    	"exdmg"   "50 60 70 80"
+
+		    }
+
+		    "03"
+	   		{
+
+	   			"var_type"   "FIELD_FLOAT"
+	   			"stund" 	"0.5 0.6 0.7 0.8"
+
+	   		}
+
+		  
+		    //"03" {} "04" {} and as many as needed
+		}
+
+		"Modifiers"
+		{
+			"lucky_shot"
+			{
+				"Passive"   "1"
+				"OnAttackLanded"
+				{
+				
+				"Random"
+				{
+					"Chance"			"%chance"
+					"OnSuccess"
+					{
+
+						"Stun"
+						{
+							"Duration"   "%stund"
+							"Target" 	 "TARGET"
+						}
+
+					"Damage"
+					{	
+					"Target"		"TARGET"
+					"Type"			"DAMAGE_TYPE_PHYSICAL"
+					"Damage"		"%exdmg"
+					}
+
+
+					}
+				
+				}
+			}
+
+			}
+
+
+	}
+
+
+	}
+
+
+
+
+	"guardian_mana"
+	{
+
+ 	"BaseClass"             		"ability_datadriven"
+ 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE DOTA_ABILITY_BEHAVIOR_AURA"
+ 	"AbilityType"		"DOTA_ABILITY_TYPE_ULTIMATE"   
+   	"AbilityUnitTargetTeam"  "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    "AbilityUnitTargetType"  "DOTA_UNIT_TARGET_HERO"
+	"AbilityTextureName"			"guardian_mana"
+	
+	
+		"AbilitySpecial"
+		{
+		    "01"
+		    { 
+		        "var_type"  "FIELD_INTEGER"
+		        "aradius" "1000"
+		    }
+		    "02"
+		    { 
+		        "var_type"  "FIELD_FLOAT"
+		        "mana_re" "100 150 200 250"
+		    }
+		    //"03" {} "04" {} and as many as needed
+		}
+
+		"Modifiers"
+		{
+			"guardian_mana_ar"
+			{
+				"Hidden" 			"1"
+				 "Passive"			"1"
+				 "Aura"        "guardian_aura_effect_mana"
+       			 "Aura_Radius" "%aradius"
+       	 		 "Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+       			 "Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+	
+				
+			
+			}
+
+		 "guardian_aura_effect_mana"
+		    {
+		  
+		        "Properties" 
+		        {
+		            "MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE" "%mana_re" 
+		        }
+		   	 }
+
+		}
+		
+}
+
+	"guardian_armor_aura"
+	{
+
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"guardian_armor"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE DOTA_ABILITY_BEHAVIOR_AURA"
+
+		"AbilitySpecial"
+		{
+		    "01"
+		    { 
+		        "var_type"  "FIELD_INTEGER"
+		        "aradius" "1000"
+		    }
+		    "02"
+		    { 
+		        "var_type"  "FIELD_FLOAT"
+		        "armor_bonus" "3.0 4.0 5.0 6.0"
+		    }
+		    //"03" {} "04" {} and as many as needed
+		}
+
+		"Modifiers"
+		{
+			"guardian_armor"
+			{
+				"Hidden" 			"1"
+				 "Passive"			"1"
+				 "Aura"        "guardian_aura_effect"
+       			 "Aura_Radius" "%aradius"
+       	 		 "Aura_Teams"  "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+       			 "Aura_Types"  "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+	
+				
+			
+			}
+
+		 "guardian_aura_effect"
+		    {
+		  
+		        "Properties" 
+		        {
+		            "MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS" "%armor_bonus" 
+		        }
+		   	 }
+
+		}
+
+
+	}
+
+
+
+	"guardian_spell_immune"
+	{
+	
+	"BaseClass"             "ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+    		"AbilityUnitTargetTeam"  "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+    		"AbilityUnitTargetType"  "DOTA_UNIT_TARGET_HERO"
+			    "AbilityCastAnimation"   "ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCooldown"				"25.0 20.0 15.0 10.0"
+		"AbilityTextureName"    "guardian_spell_immune"
+
+
+		"AbilityManaCost"				"150"
+		
+		
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target" "TARGET"
+				"ModifierName" "guardian_spell_immunity"
+			}
+		}
+
+		
+	"Modifiers"
+	{
+	"guardian_spell_immunity"
+	{
+		"Duration" "5"
+	    "EffectName" "particles/omniknight_repel_buff.vpcf"
+		"EffectAttachType" "follow_origin"
+	
+	 "States"
+        { 
+            "MODIFIER_STATE_MAGIC_IMMUNE" "MODIFIER_STATE_VALUE_ENABLED"
+        }
+	}
+	
+	
+	
+	}
+	
+	
+	}
+	
+	"guardian_heal"
+	{
+		"BaseClass"             "ability_datadriven"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+    		"AbilityUnitTargetTeam"  "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+			    "AbilityCastAnimation"   "ACT_DOTA_CAST_ABILITY_4"
+
+    		"AbilityUnitTargetType"  "DOTA_UNIT_TARGET_HERO"
+		"AbilityTextureName"    "guardian_heal"
+
+		"AbilityCooldown"				"15.0 15.0 15.0 15.0"
+		"AbilityChannelTime" "10.0 20.0 30.0 45.0"
+
+		"AbilityManaCost"				"150"
+		"AbilityChannelledManaCostPerSecond" "50 60 75 90"
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target" "TARGET"
+				"ModifierName" "medic_heala"
+			}
+		}
+
+		"OnChannelFinish"
+		{
+			"RemoveModifier"
+			{
+				"Target" "TARGET"
+				"ModifierName" "medic_heala"
+			}
+		}
+
+		"Modifiers"
+		{
+			"medic_heala"
+			{
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target" "TARGET"
+						"ControlPointEntities"
+						{
+							"CASTER"	"attach_hitloc"
+							"TARGET"		"attach_mouth"
+						}
+						"EffectName"		"particles/lion_spell_mana_drain.vpcf"
+						"EffectAttachType"	"start_at_customorigin"
+					}
+				}
+
+				"ThinkInterval"		".25"
+				"OnIntervalThink"
+				{
+					"Heal"
+					{
+						
+						"HealAmount"	"35"
+						"Target"	"TARGET"
+					}
+				}
+
+			
+			}
+		}
+
+
+	}
+}
