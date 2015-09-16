@@ -88,7 +88,7 @@ function BossGame:OnNPCSpawned( keys )
 			CosmeticLib:RemoveAll(npc)
 		CosmeticLib:ReplaceWithSlotName( npc, "head", 6785 )
 
-		print("YO ")
+		print("i rode the tractor ")
 	end
 
 		if npc:IsRealHero() and (npc:GetClassname() == "npc_dota_hero_ursa") then
