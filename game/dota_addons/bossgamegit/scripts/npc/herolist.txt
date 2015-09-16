@@ -2,9 +2,8 @@
 {
 
 	//THIEF BOSS THING
-	//BUTTHOLE
 
-	"npc_dota_hero_enchantress" "1" //SUMMONER
+	"npc_dota_hero_invoker" "1" //SUMMONER
 
 	"npc_dota_hero_batrider"	"1" //PYROMANIAC
 
