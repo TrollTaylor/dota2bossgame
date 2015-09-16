@@ -12,7 +12,7 @@ var  panelchild = {};
 //, 'clockwerk' : "npc_dota_hero_rattletrap", 'special_class_1' : "npc_dota_hero_luna"
 var heroes = {};
 var playersa = {};
-var heores = {'medic' : "npc_dota_hero_pugna", 'tank' : "npc_dota_hero_alchemist", 'ranger' : "npc_dota_hero_drow_ranger", 'summoner' : "npc_dota_hero_enchantress", 'engineer' : "npc_dota_hero_rattletrap", 'pyro' : "npc_dota_hero_batrider", 'berserker' : "npc_dota_hero_troll_warlord", 'icedrag' : "npc_dota_hero_winter_wyvern"};
+var heores = {'medic' : "npc_dota_hero_pugna", 'tank' : "npc_dota_hero_alchemist", 'ranger' : "npc_dota_hero_drow_ranger", 'summoner' : "npc_dota_hero_invoker", 'engineer' : "npc_dota_hero_rattletrap", 'pyro' : "npc_dota_hero_batrider", 'berserker' : "npc_dota_hero_troll_warlord", 'icedrag' : "npc_dota_hero_winter_wyvern"};
 var boss = {};
 var sele = -1;
 

@@ -77,9 +77,9 @@
 
 			</Panel>
 
-				<Panel hittest="true" id="npc_dota_hero_enchantress" selectionpos="auto">
-			<Button id="summoner_pic" onactivate="selectHero('npc_dota_hero_enchantress')">
-			<DOTAHeroImage id="summoner_pica" heroname="npc_dota_hero_enchantress" heroimagestyle="landscape" />
+				<Panel hittest="true" id="npc_dota_hero_invoker" selectionpos="auto">
+			<Button id="summoner_pic" onactivate="selectHero('npc_dota_hero_invoker')">
+			<DOTAHeroImage id="summoner_pica" heroname="npc_dota_hero_invoker" heroimagestyle="landscape" />
 			<Label id="summoner_text" text="Summoner" />
 
 			</Button>
