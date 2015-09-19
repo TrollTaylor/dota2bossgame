@@ -18,5 +18,21 @@ function useCombination(combination,event)
 	end
 
 	function summon(event)
-		useCombination("FFFF",event)
+		combo = ""
+		for k,v in ipairs(event.caster:FindAllModifiers()) do
+		if event.caster:FindModifierByName("summoner_fire_modi") ~= nil then
+			combo = ("F".. combo)
+		end
+		if event.caster:FindModifierByName("summoner_earth_modi") ~= nil then
+			combo = ("E".. combo)
+		end
+		if event.caster:FindModifierByName("summoner_air_modi") ~= nil then
+			combo = ("A".. combo)
+		end
+		if event.caster:FindModifierByName("summoner_water_modi") ~= nil then
+			combo = ("W".. combo)
+		end
+		end
+		print(combo)
+		useCombination(combo, event)
 	end
