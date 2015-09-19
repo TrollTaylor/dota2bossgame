@@ -3,6 +3,29 @@
 {
 	"Version"		"1"
 	
+	"ranger_arrow_cone"
+	{
+		"BaseClass"          "ability_datadriven"
+		"AbilityBehavior" 	"DOTA_ABILITY_BEHAVIOR_POINT_TARGET"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"         "ranger_abilities.lua"
+				"Function"           "arrow_shoot"
+				
+			
+			
+			}
+		
+		
+		
+		}
+	
+	
+	}
+
 	"summoner_spawn"
 	{
 		"BaseClass"          "ability_datadriven"
