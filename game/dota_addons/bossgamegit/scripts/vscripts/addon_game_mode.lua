@@ -2,7 +2,6 @@
 -- TODO --
 require( 'CosmeticLib' )
 
-
 if BossGame == nil then
 	BossGame = class({})
 end
@@ -16,7 +15,7 @@ function Precache( context )
 			PrecacheResource( "particle_folder", "particles/folder", context )
 	]]
 		PrecacheUnitByNameSync("npc_dota_hero_pugna", context)
-		PrecacheUnitByNameSync("npc_dota_hero_enchantress", context)
+		PrecacheUnitByNameSync("npc_dota_hero_invoker", context)
 		PrecacheUnitByNameSync("npc_dota_hero_batrider", context)
 		PrecacheUnitByNameSync("npc_dota_hero_winter_wyvern", context)
 		PrecacheUnitByNameSync("npc_dota_hero_alchemist", context)
@@ -37,7 +36,13 @@ function Precache( context )
 		PrecacheResource( "model_folder", "models/items/drow", context )
 		PrecacheResource( "model_folder", "models/heroes/rattletrap", context )
 		PrecacheResource( "model_folder", "models/items/rattletrap", context )
+		PrecacheResource( "model", "models/heroes/invoker/forge_spirit.mdl", context)
+
+
 end
+
+
+
 
 -- Create the game mode when we activate
 function Activate()
@@ -128,11 +133,9 @@ function showHud( player )
 
 end
 
-
-
+		
 
 function BossGame:InitGameMode()
-	print("fuk the police coming straight from the underground a young andy got it back cause hes brown and all the other colors so police think they have the authori")
 	GameRules:GetGameModeEntity():SetThink( "OnThink", self, "GlobalThink", 2 )
 	GameRules:GetGameModeEntity():SetAnnouncerDisabled(true)
 	GameRules:GetGameModeEntity():SetLoseGoldOnDeath(false)

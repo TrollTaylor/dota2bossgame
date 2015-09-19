@@ -2,6 +2,33 @@
 "DOTAAbilities"
 {
 	"Version"		"1"
+	
+	"summoner_spawn"
+	{
+		"BaseClass"          "ability_datadriven"
+		"AbilityBehavior" 	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"         "summoner_abilities.lua"
+				"Function"           "summon"
+				
+			
+			
+			}
+		
+		
+		
+		}
+	
+	
+	}
+	
+	
+	
+	
 	"summoner_earth"
 	{
 
