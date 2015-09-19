@@ -37,6 +37,7 @@ function Precache( context )
 		PrecacheResource( "model_folder", "models/heroes/rattletrap", context )
 		PrecacheResource( "model_folder", "models/items/rattletrap", context )
 		PrecacheResource( "model", "models/heroes/invoker/forge_spirit.mdl", context)
+		PrecacheResource("mode", "models/creeps/neutral_creeps/n_creep_golem_a/neutral_creep_golem_a.mdl", context) 
 
 
 end
