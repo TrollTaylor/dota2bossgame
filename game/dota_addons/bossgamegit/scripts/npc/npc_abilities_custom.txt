@@ -61,11 +61,12 @@
 
 		"OnSpellStart"
 		{
-			"ApplyModifier"
+			"RunScript"
 			{
-				"ModifierName"	"summoner_earth_modi"
-				"Target" 		"CASTER"
-			
+
+				"ScriptFile"		"summoner_abilities.lua"
+				"Function"			"applyModifier"
+
 			}	
 		}
 
@@ -94,12 +95,14 @@
 
 		"OnSpellStart"
 		{
-			"ApplyModifier"
+			"RunScript"
 			{
-				"ModifierName"	"summoner_fire_modi"
-				"Target" 		"CASTER"
-			
-			}	
+
+				"ScriptFile"		"summoner_abilities.lua"
+				"Function"			"applyModifier"
+
+			}
+
 		}
 
 		"Modifiers"
