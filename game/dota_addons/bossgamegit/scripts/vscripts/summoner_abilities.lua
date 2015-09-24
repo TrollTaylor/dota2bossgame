@@ -5,7 +5,7 @@
 --W = WATER
 --,FFFA,AAAF,
 
-validcombinations = {FFFF="npc_summoner_fire_spirita",EEEE="npc_summoner_rock_spirit",AAAA="npc_summoner_tornado_spirit",WWWW="npc_summoner_water_spirit",WWAA="npc_summoner_hurricane_spirit",FFFE="npc_summer_magma_spirit",WWEE="npc_summoner_mud_golem",FFEE="npc_summoner_fire_tree",EEEF="npc_summoner_volcanic_golem",WWWE="npc_summoner_swamp_golem",FEAW="npc_summoner_elemental_spirit",EEEW="npc_summoner_sludge_monster",AAAW="npc_summoner_mystical_fog",WWWA="npc_summoner_mystical_wip",FFAA="npc_summoner_energy_spirit",}
+validcombinations = {FFFF="npc_summoner_fire_spirit",EEEE="npc_summoner_rock_spirit",AAAA="npc_summoner_tornado_spirit",WWWW="npc_summoner_water_spirit",WWAA="npc_summoner_hurricane_spirit",FFFE="npc_summer_magma_spirit",WWEE="npc_summoner_mud_golem",FFEE="npc_summoner_fire_tree",EEEF="npc_summoner_volcanic_golem",WWWE="npc_summoner_swamp_golem",FEAW="npc_summoner_elemental_spirit",EEEW="npc_summoner_sludge_monster",AAAW="npc_summoner_mystical_fog",WWWA="npc_summoner_mystical_wip",FFAA="npc_summoner_energy_spirit",}
 --K = COMBO
 --V = OUTCOME
 
