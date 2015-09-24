@@ -19,17 +19,28 @@ end
 
 
 function applyModifier( event )
+	modifiers = 0
 
 	if(event.ability:GetAbilityName() == "summoner_fire") then
+		if modifiers == 3 then
 
-		print("my mix tape is fire")
+
+		end
+		event.ability:ApplyDataDrivenModifier(event.caster, event.caster, "summoner_fire_modi", nil)
 
 	end
 
-
 	if(event.ability:GetAbilityName() == "summoner_earth") then
 
-		print("my mix tape is ground shaking")
+		event.ability:ApplyDataDrivenModifier(event.caster, event.caster, "summoner_earth_modi", nil)
+
+
+	end
+
+	if(event.ability:GetAbilityName() == "summoner_water") then
+
+		event.ability:ApplyDataDrivenModifier(event.caster, event.caster, "summoner_water_modi", nil)
+
 
 	end
 
@@ -44,9 +55,6 @@ end
 		end
 		if event.caster:FindModifierByName("summoner_earth_modi") ~= nil then
 			combo = ("E".. combo)
-		end
-		if event.caster:FindModifierByName("summoner_air_modi") ~= nil then
-			combo = ("A".. combo)
 		end
 		if event.caster:FindModifierByName("summoner_water_modi") ~= nil then
 			combo = ("W".. combo)

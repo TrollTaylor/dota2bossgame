@@ -29,7 +29,8 @@
 	"summoner_spawn"
 	{
 		"BaseClass"          "ability_datadriven"
-		"AbilityBehavior" 	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior" 	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"	
+		"AbilityType"		"DOTA_ABILITY_TYPE_ULTIMATE"
 		
 		"OnSpellStart"
 		{
@@ -129,11 +130,12 @@
 
 		"OnSpellStart"
 		{
-			"ApplyModifier"
+			"RunScript"
 			{
-				"ModifierName"	"summoner_water_modi"
-				"Target" 		"CASTER"
-			
+
+				"ScriptFile"		"summoner_abilities.lua"
+				"Function"			"applyModifier"
+
 			}	
 		}
 
@@ -153,38 +155,6 @@
 
 	}
 
-	"summoner_air"
-	{
-
-
-		"BaseClass"			"ability_datadriven"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-
-		"OnSpellStart"
-		{
-			"ApplyModifier"
-			{
-				"ModifierName"	"summoner_air_modi"
-				"Target" 		"CASTER"
-			
-			}	
-		}
-
-		"Modifiers"
-		{
-
-			"summoner_air_modi"
-			{
-
-			"Attributes" "MODIFIER_ATTRIBUTE_MULTIPLE"
-
-
-			}
-
-		}
-
-
-	}
 
 	"engineer_repair"
 	{

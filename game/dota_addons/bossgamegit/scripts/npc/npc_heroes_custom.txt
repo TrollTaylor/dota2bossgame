@@ -213,16 +213,23 @@
 			
 	}
 
-		"npc_dota_hero_summoner"
+	"npc_dota_hero_summoner"
 	{
 		"override_hero"				"npc_dota_hero_invoker"	
 		"VoiceFile"					""
-		"AbilityLayout"				"5"		
+		"AbilityLayout"				"4"		
 		"Ability1"                                      "summoner_fire"
 		"Ability2"										"summoner_earth"
-		"Ability3"										"summoner_air"
-		"Ability4"										"summoner_water"
-		"Ability5" 										"summoner_spawn"
+		"Ability3"										"summoner_water"
+	
+		"Ability4" 										"summoner_spawn"
+		"Ability5" 										""
+		"Ability6" 										""
+		"Ability7" 										""
+		"Ability8" 										""
+
+
+
 		"VisionNighttimeRange"		"1800"			
 
 	
