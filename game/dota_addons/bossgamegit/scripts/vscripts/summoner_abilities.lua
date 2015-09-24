@@ -15,8 +15,6 @@ function useCombination(combination,event)
  		CreateUnitByName(v, event.caster:GetAbsOrigin(), true, event.caster, event.caster, event.caster:GetTeamNumber())
  	end
  end
- return true;
-
 	end
 
 	function summon(event)
