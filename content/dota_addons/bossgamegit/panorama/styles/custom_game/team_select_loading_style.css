@@ -1,0 +1,24 @@
+@define ANIM_TIME: 0.75s;
+@define EXTRA_PADDING: 50px;
+@define M_EXTRA_PADDING: -50px;
+
+
+
+#host_options
+{
+
+margin-top: 450px;
+margin-left: 750px;
+
+}
+
+#button_select_random_text
+{
+
+		text-transform: uppercase;
+    font-size: 22px;
+	letter-spacing: 1px;
+    color: #00B2EE;
+	margin-top: 16px;
+	margin-left: 8px;
+}

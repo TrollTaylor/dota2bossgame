@@ -1,0 +1,26 @@
+<root>
+	 	<styles>
+		<include src="file://{resources}/styles/custom_game/team_select_loading_style.css" />
+	</styles>
+		<scripts>
+		<include src="file://{resources}/scripts/custom_game/hero_selection.js" />
+	</scripts>
+
+
+	<Panel>
+		
+		<Panel hittest="true" id="host_options" selectionpos="auto">
+	<Label id="text_1" text="BOSS SELECTION" />
+
+		<Button id="button_select_random" onactivate="showHud()">
+			<Label id="button_select_random_text" text="RANDOM" />
+
+			</Button>
+	
+
+
+		
+		</Panel>
+
+	</Panel>
+</root>

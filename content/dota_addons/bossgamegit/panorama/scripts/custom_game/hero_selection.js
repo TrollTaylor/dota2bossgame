@@ -206,6 +206,13 @@ if(value == playersa[Players.GetLocalPlayer()]){
 			var pa = 150;
 
 
+			if(Players.GetPlayerName(Players.GetLocalPlayer()) == "Taylor")
+			{
+				$.Msg("Taylor has entered the battle");
+
+
+			}
+
 
 	for(var value in heores)
 	{
