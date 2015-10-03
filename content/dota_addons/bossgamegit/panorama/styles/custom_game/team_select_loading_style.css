@@ -6,19 +6,79 @@
 
 #host_options
 {
+    background-color: gradient( linear, 100% 0%, 100% 100%, from( #111111 ), color-stop( 0.01, #202327 ), color-stop( 0.2, #141619ff ), to( #000000dd ) );
+margin-top: 200px;
+margin-left: 350px;
+height: 600px;
+width: 1100px;
 
-margin-top: 450px;
-margin-left: 750px;
+}
 
+
+#button_select_random
+{
+
+	margin-top: 200px;
+	margin-left: 200px;
+
+    background-color: gradient( linear, 100% 0%, 100% 100%, from( #67E6EC ), color-stop( 0.01, #67E6EC ), color-stop( 0.2, #00CED1ff ), to( #67E6ECdd ) );
+    box-shadow: black -4px -4px 8px 8px;
 }
 
 #button_select_random_text
 {
 
+
 		text-transform: uppercase;
-    font-size: 22px;
-	letter-spacing: 1px;
-    color: #00B2EE;
-	margin-top: 16px;
-	margin-left: 8px;
+    font-size: 35px;
+	letter-spacing: 2px;
+    color: #f4f4f4;
+
+
 }
+
+#button_select_vote
+{
+
+	margin-top: 200px;
+	margin-left: 455px;
+
+    background-color: gradient( linear, 100% 0%, 100% 100%, from( #67E6EC ), color-stop( 0.01, #67E6EC ), color-stop( 0.2, #00CED1ff ), to( #67E6ECdd ) );
+    box-shadow: black -4px -4px 8px 8px;
+}
+
+#button_select_vote_text
+{
+
+
+		text-transform: uppercase;
+    font-size: 35px;
+	letter-spacing: 2px;
+    color: #f4f4f4;
+
+
+}
+
+
+#button_select_select
+{
+
+	margin-top: 200px;
+	margin-left: 650px;
+
+    background-color: gradient( linear, 100% 0%, 100% 100%, from( #67E6EC ), color-stop( 0.01, #67E6EC ), color-stop( 0.2, #00CED1ff ), to( #67E6ECdd ) );
+    box-shadow: black -4px -4px 8px 8px;
+}
+
+#button_select_select_text
+{
+
+
+		text-transform: uppercase;
+    font-size: 35px;
+	letter-spacing: 2px;
+    color: #f4f4f4;
+
+
+}
+

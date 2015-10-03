@@ -1,4 +1,4 @@
-<root>
+	<root>
 	 	<styles>
 		<include src="file://{resources}/styles/custom_game/team_select_loading_style.css" />
 	</styles>
@@ -10,17 +10,26 @@
 	<Panel>
 		
 		<Panel hittest="true" id="host_options" selectionpos="auto">
-	<Label id="text_1" text="BOSS SELECTION" />
+	    <Label id="text_1" text="BOSS SELECTION" />
 
-		<Button id="button_select_random" onactivate="showHud()">
-			<Label id="button_select_random_text" text="RANDOM" />
+		     <Button id="button_select_random" onactivate="A()">
+				 <Label id="button_select_random_text" text="RANDOM" />
 
-			</Button>
+	          </Button>
 	
 
+		     <Button id="button_select_vote" onactivate="A()">
+				 <Label id="button_select_vote_text" text="POLL" />
 
-		
-		</Panel>
+	          </Button>
+	
 
+		     <Button id="button_select_select" onactivate="A()">
+				 <Label id="button_select_select_text" text="HOST'S CHOICE" />
+
+	          </Button>
+	
+
+			</Panel>
 	</Panel>
 </root>
