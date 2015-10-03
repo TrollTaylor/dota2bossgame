@@ -40,7 +40,23 @@ function Precache( context )
 		PrecacheResource( "model_folder", "models/heroes/rattletrap", context )
 		PrecacheResource( "model_folder", "models/items/rattletrap", context )
 		PrecacheResource( "model", "models/heroes/invoker/forge_spirit.mdl", context)
-		PrecacheResource( "model", "models/creeps/neutral_creeps/n_creep_golem_a/neutral_creep_golem_a.mdl", context) 
+		PrecacheResource( "model", "models/heroes/dragon_knight/dragon_knight_dragon.mdl", context)
+		PrecacheResource( "model", "models/heroes/beastmaster/beastmaster_beast.mdl", context)
+		PrecacheResource( "model", "models/heroes/enigma/eidelon.mdl", context)
+		PrecacheResource( "model", "models/heroes/batrider/batrider_mount.mdl", context)
+		PrecacheResource( "model", "models/heroes/lycan/summon_wolves.mdl", context)
+		PrecacheResource( "model", "models/heroes/furion/treant.mdl", context)
+		PrecacheResource( "model", "models/heroes/phoenix/phoenix.mdl", context)
+		PrecacheResource( "model", "model/heroes/broodmother/spiderling.mdl", context)
+
+
+
+
+
+
+
+
+
 
 
 end

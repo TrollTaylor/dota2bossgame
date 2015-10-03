@@ -65,7 +65,92 @@
 
 		}
 	
-	"npc_summoner_bearman"	
+
+
+"npc_summoner_bat_to_the_future"	
+	{
+
+		"BaseClass"		"npc_dota_creature"
+
+        "Model"                 "models/heroes/batrider/batrider_mount.mdl"
+
+		"SoundSet"					"0"			
+
+		"Level"						"1"
+
+		"ModelScale"				"1.0"
+
+		}
+
+
+
+
+
+		"npc_summoner_eye_of_fortune"	
+	{
+
+		"BaseClass"		"npc_dota_creature"
+
+        "Model"                 "models/heroes/enigma/eidelon.mdl"
+
+		"SoundSet"					"0"			
+
+		"Level"						"1"
+
+		"ModelScale"				"1.0"
+
+		}
+
+
+	
+	"npc_summoner_boaring"	
+	{
+
+		"BaseClass"		"npc_dota_creature"
+
+        "Model"                 "models/heroes/beastmaster/beastmaster_beast.mdl"
+
+		"SoundSet"					"0"			
+
+		"Level"						"1"
+
+		"ModelScale"				"1.0"
+
+		}
+
+		"npc_summoner_dragon"	
+	{
+
+		"BaseClass"		"npc_dota_creature"
+
+        "Model"                 "models/heroes/dragon_knight/dragon_knight_dragon.mdl"
+
+		"SoundSet"					"0"			
+
+		"Level"						"1"
+
+		"ModelScale"				"1.0"
+
+		}
+
+
+		"npc_summoner_manspider"	
+	{
+
+		"BaseClass"		"npc_dota_creature"
+
+        "Model"                 "model/heroes/broodmother/spiderling.mdl"
+
+		"SoundSet"					"0"			
+
+		"Level"						"1"
+
+		"ModelScale"				"1.0"
+
+		}
+
+
+		"npc_summoner_beard"	
 	{
 
 		"BaseClass"		"npc_dota_creature"
@@ -79,6 +164,7 @@
 		"ModelScale"				"1.0"
 
 		}
+
 
 	"engineer_turret"	
 	{
