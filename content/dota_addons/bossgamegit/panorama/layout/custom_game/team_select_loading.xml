@@ -10,21 +10,23 @@
 	<Panel>
 		
 		<Panel hittest="true" id="host_options" selectionpos="auto">
-	    <Label id="text_1" text="BOSS SELECTION" />
 
-		     <Button id="button_select_random" onactivate="A()">
+
+	    <Label id="text_1" text="WHO IS THE BOSS" />
+
+		     <Button id="button_select_random" onactivate="A()" class="button">
 				 <Label id="button_select_random_text" text="RANDOM" />
 
 	          </Button>
 	
 
-		     <Button id="button_select_vote" onactivate="A()">
+		     <Button id="button_select_vote" onactivate="A()" class="button">
 				 <Label id="button_select_vote_text" text="POLL" />
 
 	          </Button>
 	
 
-		     <Button id="button_select_select" onactivate="A()">
+		     <Button id="button_select_select" onactivate="A()" class="button">
 				 <Label id="button_select_select_text" text="HOST'S CHOICE" />
 
 	          </Button>
