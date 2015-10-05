@@ -53,7 +53,7 @@
 	
 	
 	
-	"summoner_earth"
+	"summoner_agility"
 	{
 
 
@@ -74,7 +74,7 @@
 		"Modifiers"
 		{
 
-			"summoner_earth_modi"
+			"summoner_agility_modi"
 			{
 
 			"Attributes" "MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -87,7 +87,7 @@
 
 	}
 
-	"summoner_fire"
+	"summoner_strength"
 	{
 
 
@@ -109,7 +109,7 @@
 		"Modifiers"
 		{
 
-			"summoner_fire_modi"
+			"summoner_strength_modi"
 			{
 			"Attributes" "MODIFIER_ATTRIBUTE_MULTIPLE"
 
@@ -121,7 +121,7 @@
 
 
 	}
-	"summoner_water"
+	"summoner_intelligence"
 	{
 
 
@@ -142,7 +142,7 @@
 		"Modifiers"
 		{
 
-			"summoner_water_modi"
+			"summoner_intelligence_modi"
 			{
 
 			"Attributes" "MODIFIER_ATTRIBUTE_MULTIPLE"

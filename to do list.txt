@@ -1,0 +1,25 @@
+• Make ui look better
+• Fix debug button not showing
+• Fix up character's spells and abilities
+ 	- rework
+	- fix models
+	- fix sets not showing particles
+	- fix summoner
+
+• Fix ability_arrow
+	- only going one direction
+
+• Make boss selection look better
+	- change color
+	- make it look nicer
+	
+• Add 2nd interface for boss selection for players// not decided
+• Make boss spawning
+• Make a feature where boss can spawn units
+• Fix where units cannot be controlled, with no idle animation.
+• Make the host's boss ui spawner work for testing,
+	- see if roshan / undyz boss spawns
+
+• Make a variety of bosses
+• Make units for the boss to spawn.
+

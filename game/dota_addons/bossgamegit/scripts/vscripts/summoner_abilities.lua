@@ -1,11 +1,10 @@
 
---F = FIRE
---E = EARTH
---A = AIR
---W = WATER
+--F = STRENGTH
+--E = AGILITY
+--W =  INTELLIGENCE
 --,FFFA,AAAF,
 
-validcombinations = {FFFF="npc_summoner_fire_spirit",EEEE="npc_summoner_rock_spirit",AAAA="npc_summoner_tornado_spirit",WWWW="npc_summoner_water_spirit",WWAA="npc_summoner_hurricane_spirit",FFFE="npc_summer_magma_spirit",WWEE="npc_summoner_mud_golem",FFEE="npc_summoner_fire_tree",EEEF="npc_summoner_volcanic_golem",WWWE="npc_summoner_swamp_golem",FEAW="npc_summoner_elemental_spirit",EEEW="npc_summoner_sludge_monster",AAAW="npc_summoner_mystical_fog",WWWA="npc_summoner_mystical_wip",FFAA="npc_summoner_energy_spirit",}
+validcombinations = {}
 --K = COMBO
 --V = OUTCOME
 
@@ -21,25 +20,25 @@ end
 function applyModifier( event )
 	modifiers = 0
 
-	if(event.ability:GetAbilityName() == "summoner_fire") then
+	if(event.ability:GetAbilityName() == "summoner_strength") then
 		if modifiers == 3 then
 
 
 		end
-		event.ability:ApplyDataDrivenModifier(event.caster, event.caster, "summoner_fire_modi", nil)
+		event.ability:ApplyDataDrivenModifier(event.caster, event.caster, "summoner_strength_modi", nil)
 
 	end
 
-	if(event.ability:GetAbilityName() == "summoner_earth") then
+	if(event.ability:GetAbilityName() == "summoner_agility") then
 
-		event.ability:ApplyDataDrivenModifier(event.caster, event.caster, "summoner_earth_modi", nil)
+		event.ability:ApplyDataDrivenModifier(event.caster, event.caster, "summoner_agility_modi", nil)
 
 
 	end
 
-	if(event.ability:GetAbilityName() == "summoner_water") then
+	if(event.ability:GetAbilityName() == "summoner_intelligence") then
 
-		event.ability:ApplyDataDrivenModifier(event.caster, event.caster, "summoner_water_modi", nil)
+		event.ability:ApplyDataDrivenModifier(event.caster, event.caster, "summoner_intelligence_modi", nil)
 
 
 	end
@@ -49,17 +48,24 @@ end
 
 	function summon( event )
 		combo = ""
+		strengthc = 0
+		agilityc = 0
+		intelligencec = 0
 		for k,v in ipairs(event.caster:FindAllModifiers()) do
-		if event.caster:FindModifierByName("summoner_fire_modi") ~= nil then
+		if event.caster:FindModifierByName("summoner_strength_modi") ~= nil then
 			combo = ("F".. combo)
+			strengthc = strengthc + 1
 		end
-		if event.caster:FindModifierByName("summoner_earth_modi") ~= nil then
+		if event.caster:FindModifierByName("summoner_agility_modi") ~= nil then
 			combo = ("E".. combo)
+			agilityc = agilityc + 1
 		end
-		if event.caster:FindModifierByName("summoner_water_modi") ~= nil then
+		if event.caster:FindModifierByName("summoner_intelligence_modi") ~= nil then
 			combo = ("W".. combo)
+			intelligencec = intelligencec + 1
 		end
 		end
+		print(combo)
 
 		useCombination(combo, event)
 	end

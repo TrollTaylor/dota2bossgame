@@ -42,7 +42,6 @@ function arrow_shoot(event)
  	fExpireTime = GameRules: GetGameTime() + 10.0,
  	bDeleteOnHit = true,
  	vVelocity = event.caster:GetForwardVector() * 1800,
- 	vVelocity = event.caster:GetForwardVector() + 100,
  	bProvidesVision = true,
  	iVisionRadius = 1000,
  	iVisionTeamNumber = event.caster:GetTeamNumber(),
