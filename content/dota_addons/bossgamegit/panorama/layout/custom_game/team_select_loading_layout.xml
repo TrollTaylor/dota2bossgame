@@ -1,0 +1,28 @@
+	<root>
+	 	<styles>
+		<include src="file://{resources}/styles/custom_game/team_select_loading_style_layout.css" />
+	</styles>
+		<scripts>
+		<include src="file://{resources}/scripts/custom_game/host_options.js" />
+	</scripts>
+
+
+	<Panel>
+		
+		<Panel hittest="true" id="host_options" selectionpos="auto">
+
+						<DOTAAvatarImage steamid="76561198058196100" id="player1" class="playerpic"/>
+
+						<DOTAAvatarImage steamid="76561198069386327" id="player2" class="playerpic"/>
+
+						<DOTAAvatarImage steamid="76561198081244711" id="player3" class="playerpic"/>
+
+						<DOTAAvatarImage steamid="76561198141535779" id="player4" class="playerpic"/>
+
+						<DOTAAvatarImage steamid="76561197968612097" id="player5" class="playerpic"/>
+
+
+
+		</Panel>
+	</Panel>
+</root>

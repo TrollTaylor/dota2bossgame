@@ -1,0 +1,44 @@
+@define ANIM_TIME: 0.75s;
+@define EXTRA_PADDING: 50px;
+@define M_EXTRA_PADDING: -50px;
+
+
+
+.playerpic
+{
+
+
+margin-top: 50px;
+width: 85px;
+
+}
+#player1
+{
+margin-left: 550px;
+wash-color: grey;
+}
+#player2
+{
+margin-left: 650px;
+
+
+}
+#player3
+{
+margin-left: 750px;
+
+
+}
+#player4
+{
+margin-left: 850px;
+
+
+}
+#player5
+{
+margin-left: 950px;
+
+wash-color: red;
+
+}

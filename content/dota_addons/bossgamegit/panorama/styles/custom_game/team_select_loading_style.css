@@ -51,19 +51,22 @@ width: 1100px;
 
 
 }
-.button:active
-{
-
-
-    box-shadow: blue -4px -4px 8px 8px;
-}
-
 .button:hover
 {
 
 
     box-shadow: honeydew -4px -4px 8px 8px;
 }
+
+.button:active
+{
+
+    background-color: gradient( linear, 100% 0%, 100% 100%, from( #B4CDCD ), color-stop( 0.01, #B4CDCD ), color-stop( 0.2, #B4CDCDff ), to( #5F9F9Fdd ) );
+
+    box-shadow: #B4CDCD -4px -4px 8px 8px;
+}
+
+
 
 #text_1
 {

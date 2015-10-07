@@ -3,7 +3,7 @@
 		<include src="file://{resources}/styles/custom_game/team_select_loading_style.css" />
 	</styles>
 		<scripts>
-		<include src="file://{resources}/scripts/custom_game/hero_selection.js" />
+		<include src="file://{resources}/scripts/custom_game/host_options.js" />
 	</scripts>
 
 
@@ -14,19 +14,19 @@
 
 	    <Label id="text_1" text="WHO IS THE BOSS" />
 
-		     <Button id="button_select_random" onactivate="A()" class="button">
+		     <Button id="button_select_random" onactivate="changeOption('bossSelection', 0 )" class="button">
 				 <Label id="button_select_random_text" text="RANDOM" />
 
 	          </Button>
 	
 
-		     <Button id="button_select_vote" onactivate="A()" class="button">
+		     <Button id="button_select_vote" onactivate="changeOption('bossSelection', 1 )" class="button">
 				 <Label id="button_select_vote_text" text="POLL" />
 
 	          </Button>
 	
 
-		     <Button id="button_select_select" onactivate="A()" class="button">
+		     <Button id="button_select_select" onactivate="changeOption('bossSelection', 2 )" class="button">
 				 <Label id="button_select_select_text" text="HOST'S CHOICE" />
 
 	          </Button>

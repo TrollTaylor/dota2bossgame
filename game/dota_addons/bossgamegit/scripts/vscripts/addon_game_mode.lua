@@ -2,6 +2,9 @@
 -- TODO --
 require( 'CosmeticLib' )
 
+-- bossSelection 0 = random, 1 = poll, 2 = host selects -- Who is the boss
+-- bossHeroSelection  0 = boss selects, 1 = random, 2 = poll -- What boss does the player play
+local options = {bossSelection = 0, bossHeroSelection = 0}
 if BossGame == nil then
 	BossGame = class({})
 end
@@ -48,17 +51,6 @@ function Precache( context )
 		PrecacheResource( "model", "models/heroes/furion/treant.mdl", context)
 		PrecacheResource( "model", "models/heroes/phoenix/phoenix.mdl", context)
 		PrecacheResource( "model", "model/heroes/broodmother/spiderling.mdl", context)
-
-
-
-
-
-
-
-
-
-
-
 end
 
 
@@ -95,7 +87,6 @@ function BossGame:OnNPCSpawned( keys )
 		CosmeticLib:ReplaceWithSlotName( npc, "weapon", 9015 )
 
 
-		print("YO ")
 	end
 
 	if npc:IsRealHero() and (npc:GetClassname() == "npc_dota_hero_crystal_maiden") then
@@ -106,21 +97,18 @@ function BossGame:OnNPCSpawned( keys )
 		CosmeticLib:ReplaceWithSlotName( npc, "weapon", 6784 )
 
 
-		print("YO ")
 	end
 
 	if npc:IsRealHero() and (npc:GetClassname() == "npc_dota_hero_drow_ranger") then
 			CosmeticLib:RemoveAll(npc)
 		CosmeticLib:ReplaceWithSlotName( npc, "head", 6785 )
 
-		print("i rode the tractor ")
 	end
 
 		if npc:IsRealHero() and (npc:GetClassname() == "npc_dota_hero_ursa") then
 			CosmeticLib:RemoveAll(npc)
 		CosmeticLib:ReplaceWithSlotName( npc, "belt", 4303 )
 
-		print("YO ")
 	end
 
 	if npc:IsRealHero() and (npc:GetClassname() == "npc_dota_hero_wisp") then
@@ -130,7 +118,6 @@ function BossGame:OnNPCSpawned( keys )
 
    	local key2 = PlayerResource:GetPlayerName(npc:GetPlayerID())
 
-print("NPC SPAWNED NAME: ", npc:GetPlayerID())
 		CustomGameEventManager:Send_ServerToAllClients( "playerhasspawned", {player = npc, playername = PlayerResource:GetPlayerName(npc:GetPlayerID())} )
 		CustomGameEventManager:Send_ServerToPlayer( npc, "npc_spawned" , {} )
 
@@ -153,7 +140,25 @@ function showHud( player )
 
 end
 
-		
+function changeOption( eventSourceIndex, args )
+	--if args['option'] == "bossSelection" then
+	--	bossSelection = args['option']
+	--	print("Changed ", args['option'], " to ", args['option2'])
+	--end
+
+	 for k,v in pairs(options) do
+ 	if args['option'] == k then
+
+ 		print(options[k], " set to ", args['option2'])
+ 		options[k] = args['option2']
+ 	end
+end
+
+
+CustomGameEventManager:Send_ServerToAllClients( "optionchanged", args )
+
+
+end
 
 function BossGame:InitGameMode()
 	GameRules:GetGameModeEntity():SetThink( "OnThink", self, "GlobalThink", 2 )
@@ -166,6 +171,7 @@ function BossGame:InitGameMode()
 	ListenToGameEvent('dota_player_gained_level', Dynamic_Wrap(BossGame, 'OnPlayerLevelUp'), self)
 
 	CustomGameEventManager:RegisterListener( "hero_select", HeroSelectA )
+	CustomGameEventManager:RegisterListener( "optionchange", changeOption )
 
 
 Convars:RegisterCommand( "playerID", function()
