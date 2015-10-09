@@ -15,8 +15,20 @@ if(key == event_data['option']){
 }
 $.Msg(options);
 
+$.Msg($.GetContextPanel().GetChild(0).GetChild(1).id)
+for(var i = 0; $.GetContextPanel().GetChild(0).GetChildCount() > i; i++)
+{
+	$.Msg(event_data['option'])
+if($.GetContextPanel().GetChild(0).GetChild(i).id == event_data['option']){
+
+	$.Msg("Durp" , event_data['option'])
 
 
+}
+
+
+
+}
 }
 
 

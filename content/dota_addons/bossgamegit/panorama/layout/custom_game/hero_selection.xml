@@ -7,7 +7,7 @@
 	</scripts>
 
 
-	<Panel>
+	<Panel hittest="false">
 
 	
 		<Panel hittest="true" id="debug_pan" selectionpos="auto">

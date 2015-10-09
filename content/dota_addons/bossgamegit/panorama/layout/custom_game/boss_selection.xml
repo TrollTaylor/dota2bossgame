@@ -1,0 +1,18 @@
+	<root>
+	 	<styles>
+		<include src="file://{resources}/styles/custom_game/boss_selection.css" />
+	</styles>
+		<scripts>
+		<include src="file://{resources}/scripts/custom_game/host_options.js" />
+	</scripts>
+
+
+	<Panel>
+		
+		<Panel hittest="true" id="boss_selection" selectionpos="auto">
+
+						
+		</Panel>
+		
+	</Panel>
+</root>

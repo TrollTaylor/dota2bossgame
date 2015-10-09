@@ -19,11 +19,10 @@
 
 
 	<Panel>
-			 <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/hero_selection.xml" /> 
-			<!--<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/team_select_loading.xml" /> --> 
-			<!--<CustomUIElement type="GameSetup" layoutfile="file://{resources}/layout/custom_game/team_select_loading_layout.xml" />  -->
+			<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/hero_selection.xml" />
+			<!--<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/boss_selection.xml" /> --> 
 
-			<!-- GameSetup -->
-
+			<!--<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/team_select_loading.xml" /> -->
+			<!-- <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/team_select_loading_layout.xml" />   -->
 	</Panel>
 </root>
