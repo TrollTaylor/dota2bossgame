@@ -1,0 +1,13 @@
+"J:\Games\steamapps\common\dota 2 beta\game\bin\win64\dota2.exe" -addon bossgamegit -tools -steam -dx11 +dota_combine_models 0
+
+j:\games\steamapps\common\dota 2 beta\game\dota_addons\bossgamegit\elements\sessions\session1.dmx#0
+
+1920x1080 @24.00 fps
+motion blur samples:    per-camera settings
+depth of field samples: 64
+
+Frame  	Frame  	Total  	Shot                   	Map                    	DoF    	MBlur  	Total
+Number 	Time   	Time   	Name                   	Name                   	Count  	Count  	Count
+      4	  1.795	      2	shot1                 	maps/boss_game.vmap   	   64	    8	   64
+
+finished rendering 1 frames
