@@ -1,0 +1,15 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
+	</styles>
+	<Panel class="TestLoadingRoot">
+		<Panel id="seq" >
+			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/drow_loadingscreen_2.psd" />
+			<Image id="seq_drow" class="SeqImg" src="file://{images}/custom_game/loading_screen/drow_loadingscreen_1.psd" />
+
+		</Panel>
+		<Panel id="TitlePanel">
+		</Panel>
+	</Panel>
+</root>
