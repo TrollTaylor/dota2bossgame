@@ -1,4 +1,4 @@
-@define TotalLength: 30s;
+@define TotalLength: 35s;
 @define TimingFunc: linear;
 @define IterationCount: 1;
 
@@ -61,7 +61,7 @@
 #seq
 {
     overflow: clip;
-	pre-transform-scale2d: 1.35, 1.35;
+	pre-transform-scale2d: 1.35, 1.35; 
 }
 
 @keyframes 'x' {}
@@ -88,8 +88,8 @@
 
 #seq_drow
 {
-	margin-left: 1015px;
-	margin-top: 120px;
+	margin-left: -50px;
+	margin-top: 0px;
 	animation-name: seq_drow_anim;
 	animation-duration: TotalLength;
 	animation-timing-function: TimingFunc;
@@ -100,8 +100,75 @@
 {
 	0%
 	{
-		transform: translateX( 50px ) translateY( 10px );
-        pre-transform-scale2d: 0.90;
+		transform: translateX( -250px ) translateY( 10px );
+        pre-transform-scale2d: 1.15;
+	}
+
+	100%
+	{
+	}
+}
+
+#seq_pugna
+{
+	margin-left: -50px;
+	margin-top: 0px;
+	animation-name: seq_pugna_anim;
+	animation-duration: TotalLength;
+	animation-timing-function: TimingFunc;
+	animation-iteration-count: IterationCount;
+}
+
+@keyframes 'seq_pugna_anim'
+{
+	0%
+	{
+		transform: translateX( -250px ) translateY( 10px );
+        pre-transform-scale2d: 1.15;
+	}
+
+	100%
+	{
+	}
+}
+#seq_batrider
+{
+	margin-left: 250px;
+	margin-top: 0px;
+	animation-name: seq_batrider_anim;
+	animation-duration: TotalLength;
+	animation-timing-function: TimingFunc;
+	animation-iteration-count: IterationCount;
+}
+
+@keyframes 'seq_batrider_anim'
+{
+	0%
+	{
+		transform: translateX( -250px ) translateY( 10px );
+        pre-transform-scale2d: 1.15;
+	}
+
+	100%
+	{
+	}
+}
+#seq_batrider_flame
+{
+	margin-left: 1150px;
+	margin-top: 170px;
+	animation-name: seq_batrider_flame_anim;
+	animation-duration: TotalLength;
+	animation-timing-function: TimingFunc;
+	animation-iteration-count: IterationCount;
+}
+
+@keyframes 'seq_batrider_flame_anim'
+{
+	0%
+	{
+		transform: translateX( -250px ) translateY( 20px );
+        pre-transform-scale2d: 1.15;
 	}
 
 	100%
