@@ -2,7 +2,82 @@
 "DOTAAbilities"
 {
 	"Version"		"1"
-	
+		
+	"priest_ascension"
+	{
+
+		"BaseClass"          "ability_datadriven"
+		"AbilityBehavior" 	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"		"DOTA_ABILITY_TYPE_ULTIMATE"
+
+		
+
+
+
+		"Modifiers"
+		{
+
+			"modifier_ascension_aur"
+			{	
+				"Passive"	"1"
+		"Aura"          	"modifier_ascension"
+		"Aura_Radius"   	"500"
+		"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"Aura_Types"    	"DOTA_UNIT_TARGET_HERO"
+		"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_NONE"
+		"Aura_ApplyToCaster" "1"
+			
+			}
+
+			"modifier_ascension"
+			{
+				"Passive"			"0"
+				"IsDebuff"			"0"
+				"OnDeath"
+				{
+
+					"RunScript"
+					{
+
+							"ScriptFile"         "priest_abilities.lua"
+							"Function"           "ascension"
+
+
+					}
+				}
+			}
+
+		}
+
+	}
+
+	"priest_redemption"
+	{
+		"BaseClass"          "ability_datadriven"
+		"AbilityBehavior" 	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	   	"AbilityUnitTargetTeam"  "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	   	 "AbilityUnitTargetType"  "DOTA_UNIT_TARGET_HERO"
+
+
+
+	"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"         "priest_abilities.lua"
+				"Function"           "redemption"
+				
+			
+			
+			}
+		
+		
+		
+		}
+
+
+	}
+
 	"ranger_arrow_cone"
 	{
 		"BaseClass"          "ability_datadriven"
