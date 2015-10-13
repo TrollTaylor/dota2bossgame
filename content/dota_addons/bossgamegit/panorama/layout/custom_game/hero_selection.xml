@@ -59,10 +59,10 @@
 
 			</Panel>
 
-				<Panel hittest="true" id="npc_dota_hero_winter_wyvern" selectionpos="auto">
-		<Button id="icedrag_pic" onactivate="selectHero('npc_dota_hero_winter_wyvern')">
-			<DOTAHeroImage id="icedrag_pica" heroname="npc_dota_hero_winter_wyvern" heroimagestyle="landscape" />
-			<Label id="icedrag_text" text="icedrag" />
+				<Panel hittest="true" id="npc_dota_hero_omniknight" selectionpos="auto">
+		<Button id="priest_pic" onactivate="selectHero('npc_dota_hero_omniknight')">
+			<DOTAHeroImage id="priest_pica" heroname="npc_dota_hero_omniknight" heroimagestyle="landscape" />
+			<Label id="priest_text" text="priest" />
 
 			</Button>
 

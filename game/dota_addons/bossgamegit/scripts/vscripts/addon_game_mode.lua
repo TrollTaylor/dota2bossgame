@@ -20,7 +20,7 @@ function Precache( context )
 		PrecacheUnitByNameSync("npc_dota_hero_pugna", context)
 		PrecacheUnitByNameSync("npc_dota_hero_invoker", context)
 		PrecacheUnitByNameSync("npc_dota_hero_batrider", context)
-		PrecacheUnitByNameSync("npc_dota_hero_winter_wyvern", context)
+		PrecacheUnitByNameSync("npc_dota_hero_omniknight", context)
 		PrecacheUnitByNameSync("npc_dota_hero_alchemist", context)
 		PrecacheUnitByNameSync("npc_dota_hero_drow_ranger", context)
 		PrecacheUnitByNameSync("npc_dota_hero_rattletrap", context)
@@ -36,12 +36,18 @@ function Precache( context )
 		PrecacheResource( "model", "models/development/invisiblebox.vmdl", context )
 		PrecacheResource( "model_folder", "models/heroes/ursa", context )
 		PrecacheResource( "model_folder", "models/items/ursa", context )
+		PrecacheResource( "model_folder", "models/heroes/pugna", context )
+		PrecacheResource( "model_folder", "models/items/pugna", context )
+		PrecacheResource( "model_folder", "models/heroes/batrider", context )
+		PrecacheResource( "model_folder", "models/items/batrider", context )
 		PrecacheResource( "model_folder", "models/heroes/drow", context )
 		PrecacheResource( "model_folder", "models/items/drow", context )
 		PrecacheResource( "model_folder", "models/heroes/invoker", context )
 		PrecacheResource( "model_folder", "models/items/invoker", context )
 		PrecacheResource( "model_folder", "models/heroes/rattletrap", context )
 		PrecacheResource( "model_folder", "models/items/rattletrap", context )
+		PrecacheResource( "model_folder", "models/heroes/omniknight", context )
+		PrecacheResource( "model_folder", "models/items/omniknight", context )
 		PrecacheResource( "model", "models/heroes/invoker/forge_spirit.mdl", context)
 		PrecacheResource( "model", "models/heroes/dragon_knight/dragon_knight_dragon.mdl", context)
 		PrecacheResource( "model", "models/heroes/beastmaster/beastmaster_beast.mdl", context)
@@ -79,50 +85,7 @@ function BossGame:OnNPCSpawned( keys )
 	local npc = EntIndexToHScript(keys.entindex)
  
 
-	if npc:IsRealHero() and (npc:GetClassname() == "npc_dota_hero_rattletrap") then
-		CosmeticLib:RemoveAll(npc)
-		CosmeticLib:ReplaceWithSlotName( npc, "back", 9013 )
-		CosmeticLib:ReplaceWithSlotName( npc, "head", 6823 )
-		CosmeticLib:ReplaceWithSlotName( npc, "shoulder", 9326 )
-		CosmeticLib:ReplaceWithSlotName( npc, "weapon", 9015 )
-
-
-	end
-
-	if npc:IsRealHero() and (npc:GetClassname() == "npc_dota_hero_crystal_maiden") then
-		CosmeticLib:RemoveAll(npc)
-		CosmeticLib:ReplaceWithSlotName( npc, "back", 7385 )
-		CosmeticLib:ReplaceWithSlotName( npc, "head", 6686 )
-		CosmeticLib:ReplaceWithSlotName( npc, "shoulder", 9326 )
-		CosmeticLib:ReplaceWithSlotName( npc, "weapon", 6784 )
-
-
-	end
-
-	if npc:IsRealHero() and (npc:GetClassname() == "npc_dota_hero_drow_ranger") then
-			CosmeticLib:RemoveAll(npc)
-		CosmeticLib:ReplaceWithSlotName( npc, "head", 6785 )
-
-	end
-
-		if npc:IsRealHero() and (npc:GetClassname() == "npc_dota_hero_ursa") then
-			CosmeticLib:RemoveAll(npc)
-		CosmeticLib:ReplaceWithSlotName( npc, "belt", 4303 )
-
-	end
-
-	if npc:IsRealHero() and (npc:GetClassname() == "npc_dota_hero_wisp") then
-	npc:SetAbilityPoints(1)
-	local ability = npc:GetAbilityByIndex(0)
-	ability:SetLevel(1)
-
-   	local key2 = PlayerResource:GetPlayerName(npc:GetPlayerID())
-
-		CustomGameEventManager:Send_ServerToAllClients( "playerhasspawned", {player = npc, playername = PlayerResource:GetPlayerName(npc:GetPlayerID())} )
-		CustomGameEventManager:Send_ServerToPlayer( npc, "npc_spawned" , {} )
-
-		
-	end
+	
 end
 
 
