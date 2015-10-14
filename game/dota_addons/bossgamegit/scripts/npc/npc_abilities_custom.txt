@@ -16,6 +16,14 @@
 
 		"Modifiers"
 		{
+			"modifier_ascension_effects"
+			{
+				
+				"StatusEffectName"     "particles/status_fx/status_effect_guardian_angel.vpcf"
+				"StatusEffectPriority" "10"
+	    "EffectName" "particles/omniknight_guardian_angel_wings.vpcf"
+		"EffectAttachType" "follow_origin"
+			}
 
 			"modifier_ascension_aur"
 			{	
@@ -34,7 +42,8 @@
 				"Passive"			"0"
 				"IsDebuff"			"0"
 				"OnDeath"
-				{
+				{	
+
 
 					"RunScript"
 					{

@@ -5,6 +5,10 @@ require( 'CosmeticLib' )
 -- bossSelection 0 = random, 1 = poll, 2 = host selects -- Who is the boss
 -- bossHeroSelection  0 = boss selects, 1 = random, 2 = poll -- What boss does the player play
 local options = {bossSelection = 0, bossHeroSelection = 0}
+	
+local boss = {player = 0, boss = 0}
+
+
 if BossGame == nil then
 	BossGame = class({})
 end
@@ -28,6 +32,7 @@ function Precache( context )
 		PrecacheResource( "model", "models/heroes/techies/fx_techiesfx_stasis.mdl", context )
 		PrecacheResource( "model", "models/heroes/tinker/tinker.mdl", context )
 		PrecacheResource( "particle", "particles/ranger_bottle.vpcf", context )
+		PrecacheResource( "particle", "particles/omniknight_guardian_angel_wings.vpcf", context )
 		PrecacheResource( "particle", "particles/units/heroes/hero_mirana/mirana_spell_arrow.vpcf", context )
 		PrecacheResource( "particle", "particles/units/heroes/hero_meepo/meepo_earthbind_projectile_fx.vpcf", context )
  		PrecacheResource( "model", "models/roshan/luna_reference.vmdl", context)

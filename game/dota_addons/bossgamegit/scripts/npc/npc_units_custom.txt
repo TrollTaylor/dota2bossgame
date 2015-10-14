@@ -3,7 +3,89 @@
 {
 	"Version"	"1"
 
-"npc_summoner_firebrand"
+
+	"npc_priest_angel_ranged"
+	{
+
+		"BaseClass"		"npc_dota_creature"
+
+		"Model"			"models/heroes/furion/treant.mdl"
+
+		"SoundSet"		"0"
+
+		"Level"			"1"
+
+		"ModelScale"	"1.2"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"	
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+
+		"AttackDamageMin"			"28"	
+
+		"AttackDamageMax"			"38"	
+
+		"AttackRate"				"1.75"	
+
+		"AttackAnimationPoint"		"0.50"	
+
+		"AttackAcquisitionRange"	"500"	
+
+		"AttackRange"				"600"
+
+		"ProjectileModel"			"particles/neutral_fx/ghost_base_attack.vpcf"	
+
+		"ProjectileSpeed"			"1800"			   
+
+
+	}
+
+
+	"npc_priest_angel"
+	{
+
+		"BaseClass"		"npc_dota_creature"
+
+		"Model"			"models/heroes/furion/treant.mdl"
+
+		"SoundSet"		"0"
+
+		"Level"			"1"
+
+		"ModelScale"	"1.2"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"	
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+
+		"AttackDamageMin"			"28"	
+
+		"AttackDamageMax"			"38"	
+
+		"AttackRate"				"1.75"	
+
+		"AttackAnimationPoint"		"0.43"	
+
+		"AttackAcquisitionRange"	"500"	
+
+		"AttackRange"				"128"
+
+		//"ProjectileModel"			"particles/neutral_fx/ghost_base_attack.vpcf"	
+
+		"ProjectileSpeed"			"0"			   
+
+
+	}
+
+	"npc_summoner_firebrand"
 	{
 		"BaseClass"			"npc_dota_creature"
 
@@ -14,6 +96,12 @@
 		"Level"				"1"
 
 		"ModelScale"		"0.6"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"		
 
 
 	}
@@ -30,6 +118,11 @@
 
 		"ModelScale"		"0.8"
 
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"	
 
 	}
 
@@ -46,6 +139,11 @@
 
 		"ModelScale"				"1.0"
 
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"	
 
 	}
 
@@ -63,11 +161,16 @@
 
 		"ModelScale"				"1.0"
 
-		}
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"	
+	}
 	
 
 
-"npc_summoner_bat_to_the_future"	
+	"npc_summoner_bat_to_the_future"	
 	{
 
 		"BaseClass"		"npc_dota_creature"
@@ -80,13 +183,19 @@
 
 		"ModelScale"				"1.0"
 
-		}
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"	
+
+	}
 
 
 
 
 
-		"npc_summoner_eye_of_fortune"	
+	"npc_summoner_eye_of_fortune"	
 	{
 
 		"BaseClass"		"npc_dota_creature"
@@ -99,7 +208,13 @@
 
 		"ModelScale"				"1.0"
 
-		}
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"	
+
+	}
 
 
 	
@@ -116,9 +231,15 @@
 
 		"ModelScale"				"1.0"
 
-		}
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
 
-		"npc_summoner_dragon"	
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"	
+
+	}
+
+	"npc_summoner_dragon"	
 	{
 
 		"BaseClass"		"npc_dota_creature"
@@ -131,10 +252,16 @@
 
 		"ModelScale"				"1.0"
 
-		}
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"	
+
+	}
 
 
-		"npc_summoner_manspider"	
+	"npc_summoner_manspider"	
 	{
 
 		"BaseClass"		"npc_dota_creature"
@@ -147,10 +274,16 @@
 
 		"ModelScale"				"1.0"
 
-		}
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"	
+
+	}
 
 
-		"npc_summoner_beard"	
+	"npc_summoner_beard"	
 	{
 
 		"BaseClass"		"npc_dota_creature"
@@ -163,7 +296,13 @@
 
 		"ModelScale"				"1.0"
 
-		}
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+
+		"MovementSpeed"				"320"		
+
+		"MovementTurnRate"			"0.6"	
+
+	}
 
 
 	"engineer_turret"	
