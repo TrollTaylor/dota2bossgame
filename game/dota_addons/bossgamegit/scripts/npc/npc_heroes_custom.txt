@@ -289,7 +289,7 @@
 		"Model"						"models/heroes/zuus/zuus.mdl"	
 		"ModelScale" 				"1.50"
 		"AbilityLayout"				"4"		
-		"Ability1"                  "summoner_spawn"
+		"Ability1"                  "undyzeus_raisethedead"
 		"Ability2"					""
 		"Ability3"					""
 		"Ability4"					""
