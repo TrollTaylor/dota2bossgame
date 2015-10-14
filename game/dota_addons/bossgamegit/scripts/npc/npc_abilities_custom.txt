@@ -2,7 +2,32 @@
 "DOTAAbilities"
 {
 	"Version"		"1"
-		
+		"undyzeus_raisethedead"
+		{
+
+			"BaseClass" 	      "ability_datadriven"
+			"AbilityBehavior"     "DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+			
+			"OnChannelFinish"
+			{
+
+			"RunScript"
+			{
+
+			"ScriptFile"		  "boss_abilities.lua"
+			"Function"			  "channelbossspawn"
+			}
+
+			}
+
+
+
+
+		}
+
+
+
+
 	"priest_ascension"
 	{
 
