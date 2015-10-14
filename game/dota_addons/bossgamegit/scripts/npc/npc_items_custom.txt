@@ -3,11 +3,11 @@
 	//=================================================================================================================
 	// Recipe: Arcane Boots
 	//=================================================================================================================
-	"item_recipe_armored_boots"
+	"item_recipe_arcane_boots2"
 	{
 		"ID"							"1005"
 
-		"BaseClass"						"item_datadriven"
+		"BaseClass"						"item_recipe_arcane_boots"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -17,102 +17,64 @@
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
-		"ItemResult"					"item_armored_boots"
+		"ItemResult"					"item_arcane_boots2"
 		"ItemRequirements"
 		{
-			"01"						"item_buckler;item_boots;item_ring_of_protection"
+			"01"						"item_energy_booster;item_arcane_boots"
 		}
 	}
 	
 	//=================================================================================================================
 	// Arcane Boots II
 	//=================================================================================================================
-	"item_armored_boots"
+	"item_arcane_boots2"
 	{
 		"ID"							"1006"
 
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"BaseClass"						"item_datadriven"
+		"BaseClass"						"item_arcane_boots"
 
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"30.0"
+		"AbilityCooldown"				"55.0"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"25"
-		"ItemCost"						"1450"
-		"ItemShopTags"					"move_speed;boost_armor"
+		"ItemCost"						"2450"
+		"ItemShopTags"					"move_speed;boost_mana;mana_pool"
 		"ItemQuality"					"rare"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemDisassembleRule"			"0"
 		"ItemAlertable"					"1"
-		"ItemAliases"					"armor;armour;ab"
+		"ItemAliases"					"mana;mb"
 		
-		"OnSpellStart"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
 		{
-
-		"ApplyModifier"
-		{
-		"Duration"			"30.0"
-		"ModifierName"		"armored_boots_bonus_armor"
-		"Target"
-		{
-
-		"Center"	"CASTER"
-		"Radius"	"1000"
-		"Teams"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"Types"		"DOTA_UNIT_TARGET_ALL"
-
-
-		}
-
-		}
-
-
-
-		}
-		
-
-
-		"Modifiers"
-		{
-
-
-		"armored_boots_bonus_armor"
-		{
-
-		"Properties"
-		{
-
-		"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"12"
-
-
-		}
-
-		}
-
-
-		"armored_boots_passive"
-		{
-		"Passive"  "1"
-		"IsHidden" "1"
-		"Properties"
-		{
-
-		"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"70"
-		"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"12"
-		"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"4"
-		"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"4"
-		"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	    "4"
-
-
-		}
-
-		}
-
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement"		"75"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_radius"		"600"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_amount"		"250"
+			}
 		}
 	}
 }
