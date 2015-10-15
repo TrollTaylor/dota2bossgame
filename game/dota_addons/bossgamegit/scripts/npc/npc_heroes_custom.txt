@@ -9,7 +9,6 @@
 		"override_hero"				"npc_dota_hero_pugna"	
 				"VoiceFile"					""
 
-		"SoundSet"					"0"	
 
 		"AbilityLayout"				"4"		
 		"Ability1"                                      "guardian_heal"
@@ -39,7 +38,6 @@
 		"override_hero"				"npc_dota_hero_omniknight"	
 				"VoiceFile"					""
 
-		"SoundSet"					"0"	
 
 		"AbilityLayout"				"4"		
 		"Ability1"                                      "priest_redemption"
@@ -127,8 +125,7 @@
 		"override_hero"				"npc_dota_hero_rattletrap"	
 				"VoiceFile"					""
 
-		"SoundSet"					"0"	
-
+		
 		"AbilityLayout"				"5"		
 		"Ability1"                                      "engineer_trap_build"
 		"Ability2"										"engineer_turret_build"
@@ -161,7 +158,7 @@
 
 		"Model"						"models/roshan/luna_reference.vmdl"	
 
-		"SoundSet"					"0"	
+		
 
 		"AbilityLayout"				"4"		
 		"Ability1"                                      "guardian_heal"

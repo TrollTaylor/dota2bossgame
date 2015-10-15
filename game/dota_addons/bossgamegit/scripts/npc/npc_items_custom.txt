@@ -36,6 +36,10 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"BaseClass"						"item_datadriven"
 
+		"AbilityTextureName" "armored_boots"
+
+
+
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"30.0"
@@ -56,20 +60,20 @@
 
 		"ApplyModifier"
 		{
-		"Duration"			"30.0"
-		"ModifierName"		"armored_boots_bonus_armor"
+			"Duration"			"30.0"
+			"ModifierName"		"armored_boots_bonus_armor"
 		"Target"
 		{
 
-		"Center"	"CASTER"
-		"Radius"	"1000"
-		"Teams"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"Types"		"DOTA_UNIT_TARGET_ALL"
+					"Center"	"CASTER"
+					"Radius"	"1000"
+					"Teams"		"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"		"DOTA_UNIT_TARGET_ALL"
 
 
-		}
+				}
 
-		}
+			}
 
 
 
@@ -84,34 +88,34 @@
 		"armored_boots_bonus_armor"
 		{
 
-		"Properties"
-		{
+			"Properties"
+			{
 
-		"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"12"
+			"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"12"
 
 
-		}
+				}
 
-		}
+			}
 
 
 		"armored_boots_passive"
 		{
-		"Passive"  "1"
-		"IsHidden" "1"
-		"Properties"
-		{
+			"Passive"  "1"
+			"IsHidden" "1"
+				"Properties"
+				{
 
-		"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"70"
-		"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"12"
-		"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"4"
-		"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"4"
-		"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	    "4"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"70"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"12"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"		"4"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"			"4"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	    "4"
 
 
-		}
+				}
 
-		}
+			}
 
 		}
 	}

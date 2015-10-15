@@ -17,6 +17,8 @@
 
 		"ModelScale"	"1.2"
 
+		"Ability1"		"priest_angel_holy_aura"
+
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
 
 		"MovementSpeed"				"320"		
